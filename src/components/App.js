@@ -37,14 +37,16 @@ class App extends Component {
     ]
   }
 
-  render() {
-    return (
-      <div id="main">
-        {/* Do not remove the main div */}
-      </div>
-    )
-  }
-}
-
+ render(){
+   return (
+     <div id="main">
+     <ol>
+     <this.cityList.filter((place)=>
+   place.country==="India").map(place,i)=>(<li key ={ `location${i+1}`}>{place.name}</li>))}
+   </ol>
+   </div>
+   )
+   }
+   }
 
 export default App;
